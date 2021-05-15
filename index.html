@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style" onclick="Hlw()">Book Now</button>
+            <button class="btn-style" onclick="displayShow()">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -114,7 +114,7 @@
            const firstClsAmount=document.getElementById('firstcls');
            const firstTotalAmount= parseInt(firstClsAmount.innerHTML);
 
-            AmountPrice('firstcls','sit')
+            amountPrice('firstcls','sit')
            
        
            
@@ -125,14 +125,14 @@
         
        
 
-         AmountPrice('economysit','siteoconomy')
+         amountPrice('economysit','siteoconomy')
         
     
         
  
     })
      
-    function Hlw(){
+    function displayShow(){
         console.log('hi')
         document.getElementById('displays').style.display='none'
         document.getElementById('showbook').style.display='block'
@@ -141,7 +141,7 @@
     }
 
 
-       function AmountPrice(classOfSit,inputSit){
+       function amountPrice(classOfSit,inputSit){
         const sitCount=document.getElementById(inputSit).value
          const  siteange=parseInt(sitCount);
          let totalPrice
